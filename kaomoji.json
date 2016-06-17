@@ -201,5 +201,41 @@
 		"keywords":["fish", "swim", "water"],
 		"icon":"(°)#))<<",
 		"category": "animal"
+	},
+
+	"friends_together":{
+		"keywords":["friends", "hangout", "play", "party"],
+		"icon": "٩(๑･ิᴗ･ิ)۶٩(･ิᴗ･ิ๑)۶",
+		"category": "people"
+	},
+
+	"friends_hand_in_hand":{
+		"keywords":["friends", "hangout", "cheer", "together", "happy", "smile"],
+		"icon":"ヽ(≧◡≦)八(o^ ^o)ノ",
+		"category": "people"
+	},
+
+	"fight_enemies":{
+		"keywords":["quarrel", "punch_in_face", "angry", "beat", "unhappy"],
+		"icon": "(｀⌒*)O-(｀⌒´Q)",
+		"category": "people"
+	},
+
+	"shot_you":{
+		"keywords":["shooting","weapon", "fight", "war", "gun"],
+		"icon": "(ﾒ￣▽￣)︻┳═一",
+		"category": "behavior"
+	},
+
+	"magic_flower":{
+		"keywords":["majic", "give_you", "beautiful"],
+		"icon": "(⊃｡•́‿•̀｡)⊃━✿✿✿✿✿✿",
+		"category": "behavior"
+	},
+
+	"majic_star":{
+		"keywords":["majic", "star", "shooting", "biu-biu"],
+		"icon": "(ﾉ≧∀≦)ﾉ ‥…━━━★",
+		"category": "behavior"
 	}
 }
