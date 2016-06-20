@@ -5,13 +5,15 @@ $(window).on('load', function(){
 		Object.keys(kaomojis).forEach(function(key){
 			var kaomoji = kaomojis[key];
 			var label = '<input type="text" class="kaomoji-icon" value= "'+kaomoji['icon']+'" />' + 
-			'<br />' + key + '<span class="keywords">' + key + ' ' + kaomoji['keywords'] + kaomoji['category']+
+			'<br />' + '<span class="keys-to-be-hide">'+key+'</span>' + '<span class="keywords">' + key + ' ' + kaomoji['keywords'] + kaomoji['category']+
 			'</span>';
 			container.append('<li class="possible_result">' + label + '</li>'); 
 			// set the id of each li to the key of the kaomoji 
 		});
+		//$(".keys-to-be-hide").toggleClass('.hide-text', localStorage.getItem('kaomoji-text-display')==='false');
 	});
-	$(".text-to-remove").toggleClass('.hide-text', localStorage.getItem('kaomoji-text-display')===false);
+	 $(".keys-to-be-hide").toggleClass('.hide-text', localStorage.getItem('kaomoji-text-display')==='false');
+	// 'false' should be literal here ? 
 });
 
 $('#search').on('search keyup',function(){
@@ -34,10 +36,11 @@ $(document).on('click', '.kaomoji-icon',function(){
 });
 
 // remove text display option
-/*** 
+//localStorage.setItem('kaomoji-text-display',!$('.keys-to-be-hide').hasClass('hide-text'));
+// even put the localStorage here is going to perform the same function also 
 $(document).on('click', '.remove-text', function(){
-	$('.text-to-remove').toggleClass('.hide-text');
-	localStorage.setItem('kaomoji-text-display',!$('.text-to-remove').hasClass('hide-text'));
+	$('.keys-to-be-hide').toggleClass('hide-text');
+	localStorage.setItem('kaomoji-text-display',!$('.keys-to-be-hide').hasClass('hide-text'));
+	// localStorage has a scope of a window and browser life time, it is shared through several window
 });
-*/
 
