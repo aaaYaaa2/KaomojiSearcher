@@ -1,10 +1,12 @@
 $(window).on('load', function(){
+	$('#search').focus();
 	$.getJSON('kaomoji.json', function(kaomojis){
 		var container = $('#kaomoji-container');
 		Object.keys(kaomojis).forEach(function(key){
 			var kaomoji = kaomojis[key];
 			var label = '<input type="text" class="kaomoji-icon" value= "'+kaomoji['icon']+'" />' + 
-			'<br />' + key + '<span class="keywords">' + key + ' ' + kaomoji['keywords'] + '</span>';
+			'<br />' + key + '<span class="keywords">' + key + ' ' + kaomoji['keywords'] + kaomoji['category']+
+			'</span>';
 			container.append('<li class="possible_result">' + label + '</li>'); 
 			// set the id of each li to the key of the kaomoji 
 		});

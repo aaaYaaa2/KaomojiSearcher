@@ -53,3 +53,15 @@ function foundOrNotFound(){
 	$('.not-found').toggle(!foundStatus);
 	
 }
+// function for category search 
+$(document).on('click','.cate-button', function(){
+	$('#search').val('#' + $(this).val().toLowerCase()); // show the category on search bar 
+	search($(this).val().toLowerCase()); // get the category value;
+});
+
+// clear the search and hash area 
+$(document).on('click', '.clear-search', function(){
+	window.location.hash = '';
+	$('#search').val('');
+	search();
+});
