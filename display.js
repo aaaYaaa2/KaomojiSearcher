@@ -11,6 +11,7 @@ $(window).on('load', function(){
 			// set the id of each li to the key of the kaomoji 
 		});
 	});
+	$(".text-to-remove").toggleClass('.hide-text', localStorage.getItem('kaomoji-text-display')===false);
 });
 
 $('#search').on('search keyup',function(){
@@ -25,13 +26,18 @@ $(document).on('click', '.kaomoji-icon',function(){
 		// Selection and execCommand does not support in Safari 
 		if(document.queryCommandSupported("copy")){
 			document.execCommand('copy');  // copyed!
-			window.getSelection().removeAllRanges(); // leave the anchorNode focusNode properties to null
+			window.getSelection().removeAllRanges(); // leave the focusNode properties to null
 			alert(this.value + " Copied! ");
 		}else{
 			alert("Please use Control+C to copy.");
 		}
 });
 
-// 
-
+// remove text display option
+/*** 
+$(document).on('click', '.remove-text', function(){
+	$('.text-to-remove').toggleClass('.hide-text');
+	localStorage.setItem('kaomoji-text-display',!$('.text-to-remove').hasClass('hide-text'));
+});
+*/
 
