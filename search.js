@@ -1,7 +1,6 @@
 $('#search').on('keyup', function(){
 	if(window.location.hash.length){
 		search($('#search').val(window.location.hash.substr(1)).val().toLowerCase()); 
-		// .val() get the value, .val(value) set the value 
 		// get the input from user from the hash tag and transform to LowerCase
 	}else{
 		search();
@@ -32,8 +31,8 @@ function foundOrNotFound(){
 }
 // function for category search 
 $(document).on('click','.cate-button', function(){
-	$('#search').val('#' + $(this).val().toLowerCase()); // show the category on search bar 
-	search($(this).val().toLowerCase()); // get the category value;
+	$('#search').val('#' + $(this).text().trim().toLowerCase()); // show the category on search bar 
+	search($(this).text().trim().toLowerCase()); // get the category value;
 });
 
 // clear the search and hash area 
