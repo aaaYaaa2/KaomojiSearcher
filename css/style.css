@@ -1,0 +1,179 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(https://fonts.googleapis.com/css?family=Cabin+Sketch);
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\000037}}
+html {
+  padding: 0;
+  overflow-x: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000312}}
+body {
+  line-height: 1.6em;
+  padding: 10px;
+  margin: 0;
+  color: #333;
+  background-color: #FFFFCC;
+  box-sizing: border-box; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000313}}
+  body, body input {
+    font-family: 'Cabin Sketch', sans-serif, times;
+    font-size: 12px;
+    font-weight: 200; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000323}}
+  body img {
+    vertical-align: middle; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000327}}
+.pull-right {
+  float: right; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000329}}
+.container, section, header, footer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000335}}
+header {
+  position: relative;
+  line-height: 1;
+  margin-bottom: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000339}}
+  header:after {
+    clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000342}}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #CC0066; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000346}}
+  a img {
+    width: 16px;
+    height: 16px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000349}}
+section {
+  overflow: hidden;
+  border-top: 1px solid #08c;
+  margin: 5px auto;
+  padding-top: 15px;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000350}}
+  section:after {
+    clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000360}}
+  section .not-found {
+    font-size: 15px;
+    color: #08c; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000363}}
+    section .not-found a {
+      text-decoration: underline; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000368}}
+ul {
+  text-align: left;
+  padding: 0;
+  margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000373}}
+.emoji-group {
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000381}}
+.kaomoji-container {
+  font-size: 0;
+  line-height: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000386}}
+ul, li {
+  list-style-type: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\0000390}}
+.button {
+  line-height: 1.5;
+  padding: 10px 12px 9px;
+  margin-left: 5px;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 35px;
+  border: 1px solid #08c;
+  font-size: 11px;
+  color: #CC0066;
+  text-transform: uppercase;
+  font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\00003103}}
+  .button:hover {
+    border-color: #FF3300; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\00003107}}
+  .button.clear-search {
+    color: #ee9d9d; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\00003110}}
+    .button.clear-search:hover {
+      border-color: #ee9d9d; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\00003116}}
+.cate-button {
+  margin: 10px auto 10px auto; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\00003121}}
+.cate-line {
+  margin: 0 auto;
+  display: flex; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\00003126}}
+.possible_result {
+  display: inline-block;
+  width: 25%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  color: #CC0066; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\00003133}}
+  .possible_result input {
+    text-align: center;
+    border: none;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\00003146}}
+.input-search {
+  min-height: 32px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  height: 30px;
+  margin: auto 5px auto 10px;
+  padding: 7px 15px;
+  text-align: middle;
+  background-position: right middle;
+  background-repeat: none;
+  outline: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\00003147}}
+  .input-search::-webkit-search-cancel-button, .input-search::-webkit-search-decoration {
+    -webkit-apprearance: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\00003162}}
+  .input-search:focus {
+    border-color: #51a7e8;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\00003167}}
+.keywords {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\00003171}}
+.not-found {
+  display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/pengxuechan\/Sites\/DynamicSearcher\/scss\/style\.scss}line{font-family:\00003175}}
+.hide-text {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */
