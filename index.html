@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html ; charset=utf-8">
+		<title>Kaomoji Searcher ~ Express Yourself Today</title>
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/normalize.css">
+	</head>
+	<body>
+		<header class="top-header">
+			<img class="goes-mid "src="http://placehold.it/35x35">
+			<input id="search" type="search" class="input-search speedy-filter" placeholder="Search">
+			<a href="#" class="button clear-search"> Clear </a>
+			<a href="#" class="button pull-right js-hide-text"> Create Kaomoji"</a>
+			<a href="#" class="button pull-right remove-text"> Pure Kaomoji</a>
+			<br/>
+			<div class="cate-line">
+				<a href="#" class="button cate-button"> People </a>
+				<a href="#" class="button cate-button"> Animal </a>
+				<a href="#" class="button cate-button"> Emotion </a>
+				<a href="#" class="button cate-button"> Behavior </a>
+			</div>
+		</header>
+
+		<section id="result">
+			<ul id="kaomoji-container">
+			</ul>
+			<div class="not-found">
+				<p> ꒰๑•̥﹏•̥๑꒱ </p>
+				<p><strong>Sorry, we did not find anything</strong></p>
+				<p>Contribute to the <a href="https://github.com/Yuuki221/kaomojiLib">Kaomoji Library</a>
+				 to Add Koamojis Missing from here. </p>
+			</div>
+		</section>
+		<script src="jquery-1.12.4.min.js"></script>
+		<script src="display.js"></script>
+		<script src="search.js"></script>
+	</body>
+</html>
