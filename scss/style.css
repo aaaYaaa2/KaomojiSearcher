@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 @import url(https://fonts.googleapis.com/css?family=Cabin+Sketch);
 html {
   padding: 0;
@@ -9,7 +8,7 @@ body {
   padding: 10px;
   margin: 0;
   color: #333;
-  background-color: #FFFFCC;
+  background-color: white;
   box-sizing: border-box; }
   body, body input {
     font-family: 'Cabin Sketch', sans-serif, times;
@@ -80,16 +79,15 @@ ul, li {
   margin-left: 5px;
   display: inline-block;
   vertical-align: top;
-  border-radius: 35px;
+  border-radius: 20px;
   border: 1px solid #08c;
   font-size: 11px;
   color: #CC0066;
-  text-transform: uppercase;
-  font-weight: bold; }
+  text-transform: uppercase; }
   .button:hover {
     border-color: #FF3300; }
   .button.clear-search {
-    color: #ee9d9d; }
+    color: #FF3300; }
     .button.clear-search:hover {
       border-color: #ee9d9d; }
 
@@ -109,9 +107,7 @@ ul, li {
   color: #CC0066; }
   .possible_result input {
     text-align: center;
-    border: none;
     outline: none;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -126,14 +122,14 @@ ul, li {
   margin: auto 5px auto 10px;
   padding: 7px 15px;
   text-align: middle;
-  background-position: right middle;
-  background-repeat: none;
   outline: none; }
   .input-search::-webkit-search-cancel-button, .input-search::-webkit-search-decoration {
     -webkit-apprearance: none; }
   .input-search:focus {
-    border-color: #51a7e8;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5); }
+    border-color: #FF3300;
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px #FF3300;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px #FF3300;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px #FF3300; }
 
 .keywords {
   display: none; }
