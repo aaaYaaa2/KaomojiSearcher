@@ -13,6 +13,7 @@ Find a bug or Need imporvement? Fork the project ! ヽ(≧◡≦)八(o^ ^o)ノ
 * Will improve the copy & paste issue....
 * Will make it mobile friendly.....
 * Will add a brand new icon ~
+* Will realize the login and register function, and then ... we can enjoy kaomoji that created by ourselves!
 
 
 
